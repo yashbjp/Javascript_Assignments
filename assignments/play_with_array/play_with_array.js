@@ -1,4 +1,12 @@
 function getEven(arr) {
+    var new_arr=[]
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]%2===0){
+            new_arr.push(arr[i])
+        }
+    }
+    return new_arr
+
     /* 
         Return an array containing only even numbers as a result
         Example
@@ -11,6 +19,10 @@ function getEven(arr) {
 }
 
 function multiplyByN(arr, n) {
+    for(var i=0;i<arr.length;i++){
+        arr[i]=arr[i]*n
+    }
+    return arr
     /* 
         Return an array whose elements are multiplied by n
         Example
@@ -21,6 +33,12 @@ function multiplyByN(arr, n) {
 }
 
 function removeNthElement(arr, n) {
+    for(var i=0;i<arr.length;i++){
+        if (i==n){
+            arr.splice(i,1)
+        }
+    }
+    return arr
     /*
         Return the array with the element present at index n removed
         Example
