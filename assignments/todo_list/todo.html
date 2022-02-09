@@ -3,11 +3,19 @@
         <title>Todo List</title>
     </head>
     <body>
-        <div>
-            <input type='text' name='todo_input'>
-            <button type='submit'>Add Todo</button>
+    <input type='text' name='todo_input' placeholder="Write a task" autofocus='autofocus'>
+                <button type='submit'>+</button>
+            </div>
+            <div class="select-box">
+                <h4>Use Filter</h4>
+                <select id="dropdown">
+                    <option value="All">All Items</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Pending">Pending</option>
+                </select>
+            </div>
             <div class='todos'></div>
         </div>
     </body>
     <script src='./script.js'></script>
-</html>
+</html>     
